@@ -1,0 +1,159 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+    align-items: center;
+    font-family: "Garnett", Helvetica, Arial, sans-serif;
+}
+
+.flex-container > div {
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.all-posts {
+    margin-left: auto;
+    margin-right: 20px;
+    color: #304ddb;
+    margin-top: 20px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.all-posts-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.main-heading h3 {
+    color: #131b24;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.01em;
+    font-size: 36px;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+}
+
+.grid-container h4 {
+    font-family: "Garnett", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    word-wrap: normal;
+    letter-spacing: -0.01em;
+    font-weight: bolder;
+}
+
+.grid-container h5 {
+    font-family: "Garnett", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    word-wrap: normal;
+    letter-spacing: -0.01em;
+    font-weight: bolder;
+}
+
+.main-card {
+    grid-area: main;
+    width: 800px;
+    height: 640px;
+}
+
+.main-card-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.main-card-link > img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main-post-avatar {
+    height: 440px;
+}
+
+.main-post-avatar > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.main-post-category {
+    font-family: "Space Mono", Helvetica, Arial, sans-serif;
+    color: #556575;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.main-post-description {
+    color: #556575;
+    font-family: "GT America", Helvetica, Arial, sans-serif;
+}
+
+.side-cards {
+    grid-area: right;
+    width: 360px;
+    height: 640px;
+}
+
+.side-card-one {
+    margin-bottom: 20px;
+}
+
+.side-card {
+    margin-bottom: 20px;
+    min-height: 300px;
+    overflow: hidden;
+    text-decoration: 'none';
+}
+
+.side-card-avatar {
+    height: 210px;
+}
+
+.side-card-avatar > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.side-card-category {
+    font-family: "Space Mono", Helvetica, Arial, sans-serif;
+    color: #556575;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.side-card-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.side-card-link > img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.all-posts-link:hover {
+    color: #263aad;
+}

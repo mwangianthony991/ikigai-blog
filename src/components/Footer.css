@@ -1,0 +1,22 @@
+.blog-footer {
+    background-color: #131b24;
+    margin-bottom: 0;
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 0 50vh 0 50vh #131b24;
+    color: #7E8E9E;
+    font-family: "GT America", Helvetica, Arial, sans-serif;
+}
+
+p.footer-copyright {
+    padding-top: 8px;
+}
+
+a {
+    color: #7E8E9E;
+}
+
+.social-links i {
+    margin-right: 15px;
+    font-size: 20px;
+}

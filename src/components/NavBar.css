@@ -1,0 +1,41 @@
+.navbar {
+    height: 85px;
+    background-color: #faf9f5;
+}
+
+.blog-name {
+    font-size: 33px;
+    font-weight: bold;
+    vertical-align: middle;
+    font-family: "GT America", Helvetica, Arial, sans-serif;
+}
+
+.nav-home-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.navbar-buttons {
+    margin-right: 100px;
+    float: right;
+    height: 50px;
+    font-family: "Garnett", Helvetica, Arial, sans-serif;
+}
+
+.navbar img {
+    width: 70px;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.home-link {
+    color: inherit;
+    text-decoration: inherit;
+    margin-left: 5px;
+}

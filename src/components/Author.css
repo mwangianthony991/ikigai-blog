@@ -1,0 +1,28 @@
+.post-author {
+    margin-bottom: 25px;
+}
+
+.post-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.author-name {
+    margin-right: 10px;
+    color: #314351;
+    font-size: 14px;
+}
+
+.divider {
+    margin-right: 10px;
+    color: #ded5d1;
+}
+
+.date {
+    color: #556575;
+    font-family: "GT America", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
