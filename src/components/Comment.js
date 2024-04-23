@@ -92,6 +92,7 @@ function Comment({ initialComment, index, handleCommentUpdate }) {
             ...comment,
             replies: orderByDatesDesc([newReply, ...replies])
         }
+        document.getElementById('add-reply-text-box').value = ''
 
         setComment(newComment)
         handleCommentUpdate(newComment)
@@ -135,7 +136,7 @@ function Comment({ initialComment, index, handleCommentUpdate }) {
                 &nbsp; &nbsp;
                 <button type='button' className='buttonClass' onClick={toggleReplyBox} data-toggle='reply-form' data-target={`comment-${index+1}-reply-form`}>Reply</button>
                 <form method='post' onSubmit={addReplyToComment} className='reply-form d-none' id={`comment-${index+1}-reply-form`}>
-                    <textarea name='commentReply' placeholder=' Reply to comment' rows='4'></textarea>
+                    <textarea id='add-reply-text-box' name='commentReply' placeholder=' Reply to comment' rows='4'></textarea>
                     <button type='submit' className='buttonClass' onClick={toggleReplyBox} data-toggle='reply-form' data-target={`comment-${index+1}-reply-form`}>Submit</button>
                     {' '}
                     <button type='button' className='buttonClass' onClick={toggleReplyBox} data-toggle='reply-form' data-target={`comment-${index+1}-reply-form`}>Cancel</button>
