@@ -17,8 +17,15 @@ function CommentList({ initialComments, handleCommentListUpdate }) {
         const form = e.target;
         const formData = new FormData(form);
         const formJson = Object.fromEntries(formData.entries());
+        const message = formJson.postReply;
+    
+        if (!message) {
+            alert("Comment cannot be blank");
+            return
+        }
+    
         const newComment = {
-            "message": formJson.postReply,
+            "message": message,
             "likes": 0,
             "dislikes": 0,
             "user": {
@@ -28,25 +35,27 @@ function CommentList({ initialComments, handleCommentListUpdate }) {
             "date": new Date().toISOString(),
             "id": uuidv4(),
             "replies": []
-        }
-        const newCommentList = [
+        };
+        const newCommentList = orderByDatesDesc([
             newComment,
             ...comments,
-        ]
-        document.getElementById('add-comment-text-box').value = 
+        ]);
+        document.getElementById('add-comment-text-box').value = ''
 
         setComments(newCommentList)
         handleCommentListUpdate(newCommentList)
     };
 
     const handleUpdatedComment = (comment) => {
-        const commentsCopy = [...comments]
+        const commentsCopy = [...comments];
+    
         for (var i = 0; i < commentsCopy.length; i++) {
             if (commentsCopy[i].id === comment.id) {
                 commentsCopy[i] = comment
             }
         }
-        setComments(commentsCopy)
+    
+        setComments(orderByDatesDesc(commentsCopy))
         handleCommentListUpdate(commentsCopy)
     };
 

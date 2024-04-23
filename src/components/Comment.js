@@ -38,20 +38,21 @@ function Comment({ initialComment, index, handleCommentUpdate }) {
         }
         const newComment = {
             ...comment,
-            replies: replies
+            replies: orderByDatesDesc(replies)
         }
         setComment(newComment)
         handleCommentUpdate(newComment)
     };
 
     const handleReplyDownvote = (reply, index) => {
-        replies[index] = {
+        const repliesCopy = [...replies];
+        repliesCopy[index] = {
             ...reply,
             dislikes: reply.dislikes + 1
         }
         const newComment = {
             ...comment,
-            replies: replies
+            replies: orderByDatesDesc(repliesCopy)
         }
         setComment(newComment)
         handleCommentUpdate(newComment)
@@ -69,9 +70,9 @@ function Comment({ initialComment, index, handleCommentUpdate }) {
         const form = e.target;
         const formData = new FormData(form);
         const formJson = Object.fromEntries(formData.entries());
-        const message = formJson.commentReply
+        const message = formJson.commentReply;
         if (!message) {
-            alert("Comment cannot be blank");
+            alert("Reply cannot be blank");
             return
         }
 
@@ -89,7 +90,7 @@ function Comment({ initialComment, index, handleCommentUpdate }) {
 
         const newComment = {
             ...comment,
-            replies: [...replies, newReply]
+            replies: orderByDatesDesc([newReply, ...replies])
         }
 
         setComment(newComment)
