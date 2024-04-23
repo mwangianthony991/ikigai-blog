@@ -1,0 +1,19 @@
+.post-avatar {
+    height: 500px;
+    margin-bottom: 40px;
+}
+
+.post-avatar img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-content {
+    font-family: "GT America", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: #405261;
+    white-space: pre-line
+}

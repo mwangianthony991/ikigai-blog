@@ -1,0 +1,21 @@
+.post {
+    margin: auto;
+    width: 850px;
+    border: 1px;
+}
+
+.post-heading {
+    text-align: center;
+    word-wrap: normal;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 0px;
+    color: #131b24;
+    font-family: "Garnett", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}

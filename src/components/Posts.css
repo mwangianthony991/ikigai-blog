@@ -1,0 +1,107 @@
+html {
+    width: 100%;
+}
+
+.all-post-categories {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2px;
+    column-gap: 20px;
+    padding: 0;
+    font-family: "GT America", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.6;
+}
+
+.all-post-categories button {
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    align-items: center;
+    appearance: none;
+    font-size: 14px;
+    font-weight: 900;
+    opacity: 0.8;
+    padding: 4px 8px;
+    height: 52px;
+    width: 287px;
+    color: #314351;
+    background-color: #f2f9fc;
+    border: hidden;
+    border-radius: 4px;
+}
+
+.all-post-categories button:hover {
+    color: #263aad;
+}
+
+.all-post-categories button.active {
+    color: #263aad;
+    font-weight: bolder;
+}
+
+.all-posts-heading > h3 {
+    color: #131b24;
+    line-height: 1.2;
+    margin-left: 20px;
+    margin-top: 40px;
+    letter-spacing: -0.01em;
+    padding-left: 8px;
+    font-size: 36px;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.post-cards {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.post-cards > div {
+    padding: 10px;
+}
+
+.single-post-card {
+    width: 380px;
+    min-height: 350px;
+    overflow: hidden;
+    text-decoration: 'none';
+}
+
+.card-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.card-link > img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.single-post-card-category {
+    font-family: "Space Mono", Helvetica, Arial, sans-serif;
+    color: #556575;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.single-post-card h5 {
+    font-family: "Garnett", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    word-wrap: normal;
+}
+
+article h5 {
+    font-weight: bolder;
+}
